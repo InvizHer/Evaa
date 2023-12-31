@@ -15,7 +15,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '10098309'))
 API_HASH = environ.get('API_HASH', 'aaacac243dddc9f0433c89cab8efe323')
-BOT_TOKEN = environ.get("BOT_TOKEN", "5457862323:AAE7-8pz2FBq5fNQMnh6oTSVYhefx2aBH8U")
+BOT_TOKEN = environ.get("BOT_TOKEN", "5473067352:AAGHTRCjoqfP00kz-T59velpn3DsHgFqQkU")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 99999))
@@ -44,7 +44,7 @@ NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", True))
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://codexun:TeamCodexun07@codexun.egmx5.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Codexun")
+DATABASE_NAME = environ.get('DATABASE_NAME', "codexun")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
