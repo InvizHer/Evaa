@@ -1532,6 +1532,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                   ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
+        total = await Media.count_documents()
+        users = await db.total_users_count()
+        chats = await db.total_chat_count()
         await query.message.edit_text(
             text=script.START_TXT.format(query.from_user.mention, total, users, chats),
             reply_markup=reply_markup,
