@@ -4,7 +4,7 @@ class script(object):
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ➲ ᴜꜱᴇʀ : <code>3857 ᴜꜱᴇʀꜱ</code>
 ➲ ꜰɪʟᴇꜱ : <code>257689 ꜰɪʟᴇꜱ</code>
-➲ ɢʀᴏᴜᴘꜱ : <code>23 ɢʀᴏᴜᴘꜱ</code>
+➲ ɢʀᴏᴜᴘꜱ : <code>34 ɢʀᴏᴜᴘꜱ</code>
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 <b>ɢᴇᴛ ᴍᴏʀᴇ ɪɴꜰᴏ ᴀʙᴏᴜᴛ ᴍᴇ ʙᴇʟᴏᴡ.</b>"""
 
@@ -277,25 +277,13 @@ Mᴏᴠɪᴇs Nᴏᴛ Aᴠᴀɪʟᴀʙʟᴇ Rᴇᴀsᴏɴ:
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>🥲"""
 
     CAPTION = """ 
-🗂 𝗙𝗶𝗹𝗲: <b><font class=smcp>{file_name}</font></b>
-📀 𝗦𝗶𝘇𝗲: <b><font class=smcp>{file_size}</font></b>
+• 𝗙𝗶𝗹𝗲 - <code>{file_name}</code>
+• 𝗦𝗶𝘇𝗲 - <code>{file_size}</code>
 
-<b>🔰 Cʀᴇᴀᴛᴏʀ : <a href="https://t.me/KUSHALHK">𝐊𝐔𝐒𝐇𝐀𝐋</a>
-🔰 Cʜᴀɴɴᴇʟ : <a href="https://t.me/TG_LINKS_CHANNEL">𝐌𝐎𝐕𝐈𝐄𝐒 𝐂𝐇𝐀𝐍𝐍𝐄𝐋</a>
-🔰 Gʀᴏᴜᴘ : <a href="https://t.me/movies_hub_official1">𝐌𝐎𝐕𝐈𝐄 𝐑𝐄𝐐𝐔𝐄𝐒𝐓 𝐆𝐑𝐎𝐔𝐏</a></b>"""
+𝗦𝗵𝗮𝗿𝗲𝗱 𝗯𝘆 @EmixinaBot"""
     
     IMDB_TEMPLATE_TXT = """
-<b>Query: {query}
-IMDb Data:
-
-🧿 𝐓𝐈𝐓𝐋𝐄: <a href={url}>{title}</a>
-🎭 𝐆𝐄𝐍𝐑𝐄𝐒: {genres}
-📆 𝐘𝐄𝐀𝐑: <a href={url}/releaseinfo>{year}</a>
-🌟 𝐑𝐀𝐓𝐈𝐍𝐆: <a href={url}/ratings>{rating}</a> / 10 (Based on {votes} user ratings)</b>
-☀️ 𝐋𝐀𝐍𝐆𝐔𝐀𝐆𝐄 : <code>{languages}</code></a>
-📀 𝐑𝐔𝐍𝐓𝐈𝐌𝐄: {runtime} Minutes</a>
-
-<b>👨‍💼 Requested by : {message.from_user.mention}</b>"""
+𝗕𝗼𝘁 𝗦𝘁𝗮𝗿𝘁𝗲𝗱 𝗪𝗼𝗿𝗸𝗶𝗻𝗴 𝗔𝗴𝗮𝗶𝗻 ❤️"""
 
     
     ALL_FILTERS = """
