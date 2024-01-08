@@ -49,6 +49,9 @@ async def start(client, message):
                     InlineKeyboardButton('ᴅᴏɴᴀᴛᴇ 💳', callback_data='kushal') 
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        total = await Media.count_documents()
+        users = await db.total_users_count()
+        chats = await db.total_chat_count()
         m=await message.reply_sticker("CAACAgIAAxkBAAEBX4RlH6KWlmN63-NAKmqJrDfX_qB1DgACVAADQbVWDGq3-McIjQH6HgQ") 
         await asyncio.sleep(1)
         await m.delete()
@@ -95,7 +98,10 @@ async def start(client, message):
                   ],[
                     InlineKeyboardButton('ᴅᴏɴᴀᴛᴇ 💳', callback_data='kushal') 
                   ]]
-        reply_markup = InlineKeyboardMarkup(buttons)      
+        reply_markup = InlineKeyboardMarkup(buttons) 
+        total = await Media.count_documents()
+        users = await db.total_users_count()
+        chats = await db.total_chat_count()
         await message.reply_text(
             text=script.START_TXT.format(message.from_user.mention, total, users, chats),
             reply_markup=reply_markup,
