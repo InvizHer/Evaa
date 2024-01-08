@@ -280,7 +280,7 @@ Mᴏᴠɪᴇs Nᴏᴛ Aᴠᴀɪʟᴀʙʟᴇ Rᴇᴀsᴏɴ:
 • 𝗙𝗶𝗹𝗲 - <code>{file_name}</code>
 • 𝗦𝗶𝘇𝗲 - <code>{file_size}</code>
 
-𝗦𝗵𝗮𝗿𝗲𝗱 𝗯𝘆 @EmixinaBot"""
+➠ 𝗦𝗵𝗮𝗿𝗲𝗱 𝗯𝘆 @EmixinaBot"""
     
     IMDB_TEMPLATE_TXT = """
 𝗕𝗼𝘁 𝗦𝘁𝗮𝗿𝘁𝗲𝗱 𝗪𝗼𝗿𝗸𝗶𝗻𝗴 𝗔𝗴𝗮𝗶𝗻 ❤️"""
