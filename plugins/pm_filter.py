@@ -229,7 +229,7 @@ async def next_page(bot, query):
     time_difference = timedelta(hours=cur_time.hour, minutes=cur_time.minute, seconds=(cur_time.second+(cur_time.microsecond/1000000))) - timedelta(hours=curr_time.hour, minutes=curr_time.minute, seconds=(curr_time.second+(curr_time.microsecond/1000000)))
     remaining_seconds = "{:.2f}".format(time_difference.total_seconds())
     if settings["button"]:
-        cap = f"<b> 🎬 Tɪᴛʟᴇ : {search}\n\n📂 Fɪʟᴇꜱ : {total}\n\n⏰ Rᴇsᴜʟᴛ Sʜᴏᴡɴ Iɴ : {remaining_seconds} <i>seconds 🔥</i>\n\n📝 Rᴇǫᴜᴇsᴛᴇᴅ Bʏ : {query.from_user.mention}\n\n⚜️ Pᴏᴡᴇʀᴇᴅ Bʏ : <a href=https://t.me/dotexrequest>MOVIE CHANNEL</a></b>"
+        cap = f"<b> 🎬 Tɪᴛʟᴇ : {search}\n\n📂 Fɪʟᴇꜱ : {total}\n\n📝 Rᴇǫᴜᴇsᴛᴇᴅ Bʏ : {query.from_user.mention}</b>"
     else:
         # cap = f"<b>Hᴇʏ {query.from_user.mention}, Hᴇʀᴇ ɪs ᴛʜᴇ ʀᴇsᴜʟᴛ ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ {search} \n\n</b>"
         cap = f"<b>Hᴇʏ {query.from_user.mention}, Fᴏᴜɴᴅ {total} Rᴇsᴜʟᴛs ғᴏʀ Yᴏᴜʀ Qᴜᴇʀʏ {search}\n\n</b>"
@@ -352,7 +352,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
     files, offset, total_results = await get_search_results(chat_id, search, offset=0, filter=True)
     # files = [file for file in files if re.search(lang, file.file_name, re.IGNORECASE)]
     if not files:
-        await query.answer("🚫 𝗡𝗼 𝗙𝗶𝗹𝗲 𝗪𝗲𝗿𝗲 𝗙𝗼𝘂𝗻𝗱 🚫", show_alert=1)
+        await query.answer("𝗡𝗼 𝗙𝗶𝗹𝗲 𝗪𝗲𝗿𝗲 𝗙𝗼𝘂𝗻𝗱 🚫", show_alert=1)
         return
     temp.GETALL[key] = files
     settings = await get_settings(message.chat.id)
@@ -432,7 +432,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
         except KeyError:
             await save_group_settings(query.message.chat.id, 'max_btn', True)
             btn.append(
-                [InlineKeyboardButton("ᴘᴀɢᴇ", callback_data="pages"), InlineKeyboardButton(text=f"1/{math.ceil(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="ɴᴇxᴛ ⇛",callback_data=f"next_{req}_{key}_{offset}")]
+                [InlineKeyboardButton("ᴘᴀɢᴇs", callback_data="pages"), InlineKeyboardButton(text=f"1/{math.ceil(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="ɴᴇxᴛ ⇛",callback_data=f"next_{req}_{key}_{offset}")]
             )
     else:
         btn.append(
@@ -576,7 +576,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
         files.extend(files2)
         
     if not files:
-        await query.answer("🚫 𝗡𝗼 𝗙𝗶𝗹𝗲 𝗪𝗲𝗿𝗲 𝗙𝗼𝘂𝗻𝗱 🚫", show_alert=1)
+        await query.answer("𝗡𝗼 𝗙𝗶𝗹𝗲 𝗪𝗲𝗿𝗲 𝗙𝗼𝘂𝗻𝗱 🚫", show_alert=1)
         return
     temp.GETALL[key] = files
     settings = await get_settings(message.chat.id)
@@ -710,7 +710,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
     files, offset, total_results = await get_search_results(chat_id, search, offset=0, filter=True)
     # files = [file for file in files if re.search(lang, file.file_name, re.IGNORECASE)]
     if not files:
-        await query.answer("🚫 𝗡𝗼 𝗙𝗶𝗹𝗲 𝗪𝗲𝗿𝗲 𝗙𝗼𝘂𝗻𝗱 🚫", show_alert=1)
+        await query.answer("𝗡𝗼 𝗙𝗶𝗹𝗲 𝗪𝗲𝗿𝗲 𝗙𝗼𝘂𝗻𝗱 🚫", show_alert=1)
         return
     temp.GETALL[key] = files
     settings = await get_settings(message.chat.id)
@@ -1101,8 +1101,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         reply_markup=InlineKeyboardMarkup(
                             [
                              [
-                              InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url=CHNL_LNK),
-                              InlineKeyboardButton('ɢʀᴏᴜᴘ', url=GRP_LNK)
+                              InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                              ]
                             ]
                         )
@@ -1163,7 +1162,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data.startswith("checksub"):
         if AUTH_CHANNEL and not await is_subscribed(client, query):
-            await query.answer("Jᴏɪɴ ᴏᴜʀ Bᴀᴄᴋ-ᴜᴘ ᴄʜᴀɴɴᴇʟ ᴍᴀʜɴ! 😒", show_alert=True)
+            await query.answer("🇮‌ 🇹‌🇴‌🇱‌🇩‌ 🇾‌🇴‌🇺‌ 🇹‌🇴‌ 🇯‌🇴‌🇮‌🇳‌ 🇺‌🇵‌🇩‌🇦‌🇹‌🇪‌ 🇨‌🇭‌🇦‌🇳‌🇳‌🇪‌🇱‌ 🇦‌🇳‌🇩‌ 🇹‌🇷‌🇾‌ 🇦‌🇬‌🇦‌🇮‌🇳‌.", show_alert=True)
             return
         ident, kk, file_id = query.data.split("#")
         await query.answer(url=f"https://t.me/{temp.U_NAME}?start={kk}_{file_id}")
@@ -1235,11 +1234,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
                                          callback_data=f'setgs#button#{settings["button"]}#{str(grp_id)}')
                 ],
                 [
-                    InlineKeyboardButton('ꜰɪʟᴇ ꜱᴇɴᴅ ᴍᴏᴅᴇ', callback_data=f'setgs#botpm#{settings["botpm"]}#{str(grp_id)}'),
-                    InlineKeyboardButton('ꜱᴛᴀʀᴛ' if settings["botpm"] else 'ᴀᴜᴛᴏ',
-                                         callback_data=f'setgs#botpm#{settings["botpm"]}#{str(grp_id)}')
-                ],
-                [
                     InlineKeyboardButton('ꜰɪʟᴇ ꜱᴇᴄᴜʀᴇ',
                                          callback_data=f'setgs#file_secure#{settings["file_secure"]}#{str(grp_id)}'),
                     InlineKeyboardButton('ᴇɴᴀʙʟᴇ' if settings["file_secure"] else 'ᴅɪꜱᴀʙʟᴇ',
@@ -1279,12 +1273,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('𝟷𝟶' if settings["max_btn"] else f'{MAX_B_TN}',
                                          callback_data=f'setgs#max_btn#{settings["max_btn"]}#{str(grp_id)}')
                 ],
-                [
-                    InlineKeyboardButton('ꜱʜᴏʀᴛʟɪɴᴋ',
-                                         callback_data=f'setgs#is_shortlink#{settings["is_shortlink"]}#{str(grp_id)}'),
-                    InlineKeyboardButton('ᴇɴᴀʙʟᴇ' if settings["is_shortlink"] else 'ᴅɪꜱᴀʙʟᴇ',
-                                         callback_data=f'setgs#is_shortlink#{settings["is_shortlink"]}#{str(grp_id)}')
-                ], 
                 [
                      InlineKeyboardButton(text="⇋ ᴄʟᴏꜱᴇ ꜱᴇᴛᴛɪɴɢꜱ ᴍᴇɴᴜ ⇋", callback_data="close_data")
                 ]
@@ -1325,11 +1313,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
                                          callback_data=f'setgs#button#{settings["button"]}#{str(grp_id)}')
                 ],
                 [
-                    InlineKeyboardButton('ꜰɪʟᴇ ꜱᴇɴᴅ ᴍᴏᴅᴇ', callback_data=f'setgs#botpm#{settings["botpm"]}#{str(grp_id)}'),
-                    InlineKeyboardButton('ꜱᴛᴀʀᴛ' if settings["botpm"] else 'ᴀᴜᴛᴏ',
-                                         callback_data=f'setgs#botpm#{settings["botpm"]}#{str(grp_id)}')
-                ],
-                [
                     InlineKeyboardButton('ꜰɪʟᴇ ꜱᴇᴄᴜʀᴇ',
                                          callback_data=f'setgs#file_secure#{settings["file_secure"]}#{str(grp_id)}'),
                     InlineKeyboardButton('ᴇɴᴀʙʟᴇ' if settings["file_secure"] else 'ᴅɪꜱᴀʙʟᴇ',
@@ -1368,12 +1351,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
                                          callback_data=f'setgs#max_btn#{settings["max_btn"]}#{str(grp_id)}'),
                     InlineKeyboardButton('𝟷𝟶' if settings["max_btn"] else f'{MAX_B_TN}',
                                          callback_data=f'setgs#max_btn#{settings["max_btn"]}#{str(grp_id)}')
-                ],
-                [
-                    InlineKeyboardButton('ꜱʜᴏʀᴛʟɪɴᴋ',
-                                         callback_data=f'setgs#is_shortlink#{settings["is_shortlink"]}#{str(grp_id)}'),
-                    InlineKeyboardButton('ᴅɪꜱᴀʙʟᴇ' if settings["is_shortlink"] else 'ᴅɪꜱᴀʙʟᴇ',
-                                         callback_data=f'setgs#is_shortlink#{settings["is_shortlink"]}#{str(grp_id)}')
                 ], 
                 [
                     InlineKeyboardButton(text="⇋ ᴄʟᴏꜱᴇ ꜱᴇᴛᴛɪɴɢꜱ ᴍᴇɴᴜ ⇋", callback_data="close")
@@ -1414,7 +1391,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("⚠️ Uɴᴀᴠᴀɪʟᴀʙʟᴇ ⚠️", callback_data=f"unalert#{from_user}")
               ]]
         btn2 = [[
-                 InlineKeyboardButton('Jᴏɪɴ Cʜᴀɴɴᴇʟ', url="https://t.me/TG_LINKS_CHANNEL"),
+                 InlineKeyboardButton('Jᴏɪɴ Cʜᴀɴɴᴇʟ', url="https://t.me/DotexHub"),
                  InlineKeyboardButton("Vɪᴇᴡ Sᴛᴀᴛᴜs", url=f"{query.message.link}")
                ]]
         if query.from_user.id in ADMINS:
@@ -1437,10 +1414,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("✅ Uᴘʟᴏᴀᴅᴇᴅ ✅", callback_data=f"upalert#{from_user}")
               ]]
         btn2 = [[
-                 InlineKeyboardButton('Jᴏɪɴ Cʜᴀɴɴᴇʟ', url="https://t.me/TG_LINKS_CHQNNEL"),
+                 InlineKeyboardButton('Jᴏɪɴ Cʜᴀɴɴᴇʟ', url="https://t.me/dotexhub"),
                  InlineKeyboardButton("Vɪᴇᴡ Sᴛᴀᴛᴜs", url=f"{query.message.link}")
                ],[
-                 InlineKeyboardButton("Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ Lɪɴᴋ", url="https://t.me/movies_hub_official1")
+                 InlineKeyboardButton("Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ Lɪɴᴋ", url="https://t.me/dotexrequest")
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -1462,10 +1439,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("🟢 Aʟʀᴇᴀᴅʏ Aᴠᴀɪʟᴀʙʟᴇ 🟢", callback_data=f"alalert#{from_user}")
               ]]
         btn2 = [[
-                 InlineKeyboardButton('Jᴏɪɴ Cʜᴀɴɴᴇʟ', url="https://t.me/TG_LINKS_CHANNEL"),
+                 InlineKeyboardButton('Jᴏɪɴ Cʜᴀɴɴᴇʟ', url="https://t.me/dotexhub"),
                  InlineKeyboardButton("Vɪᴇᴡ Sᴛᴀᴛᴜs", url=f"{query.message.link}")
                ],[
-                 InlineKeyboardButton("Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ Lɪɴᴋ", url="https://t.me/movies_hub_official1")
+                 InlineKeyboardButton("Rᴇᴏ̨ᴜᴇsᴛ Gʀᴏᴜᴘ Lɪɴᴋ", url="https://t.me/dotexrequest")
                ]]
         if query.from_user.id in ADMINS:
             user = await client.get_users(from_user)
@@ -2042,11 +2019,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
                                          callback_data=f'setgs#button#{settings["button"]}#{str(grp_id)}')
                 ],
                 [
-                    InlineKeyboardButton('ꜰɪʟᴇ ꜱᴇɴᴅ ᴍᴏᴅᴇ', callback_data=f'setgs#botpm#{settings["botpm"]}#{str(grp_id)}'),
-                    InlineKeyboardButton('ꜱᴛᴀʀᴛ' if settings["botpm"] else 'ᴀᴜᴛᴏ',
-                                         callback_data=f'setgs#botpm#{settings["botpm"]}#{str(grp_id)}')
-                ],
-                [
                     InlineKeyboardButton('ꜰɪʟᴇ ꜱᴇᴄᴜʀᴇ',
                                          callback_data=f'setgs#file_secure#{settings["file_secure"]}#{str(grp_id)}'),
                     InlineKeyboardButton('ᴇɴᴀʙʟᴇ' if settings["file_secure"] else 'ᴅɪꜱᴀʙʟᴇ',
@@ -2087,12 +2059,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
                                          callback_data=f'setgs#max_btn#{settings["max_btn"]}#{str(grp_id)}')
                 ],
                 [
-                    InlineKeyboardButton('ꜱʜᴏʀᴛʟɪɴᴋ',
-                                         callback_data=f'setgs#is_shortlink#{settings["is_shortlink"]}#{str(grp_id)}'),
-                    InlineKeyboardButton('ᴇɴᴀʙʟᴇ' if settings["is_shortlink"] else 'ᴅɪꜱᴀʙʟᴇ',
-                                         callback_data=f'setgs#is_shortlink#{settings["is_shortlink"]}#{str(grp_id)}')
-                ], 
-                [
                 InlineKeyboardButton(text="⇋ ᴄʟᴏꜱᴇ ꜱᴇᴛᴛɪɴɢꜱ ᴍᴇɴᴜ ⇋", callback_data="close_data")
                 ]
                 ]
@@ -2113,7 +2079,7 @@ async def auto_filter(client, msg, spoll=False):
             return
         if len(message.text) < 100:
             search = message.text
-            m=await message.reply_text(f"<b><i> 𝖲𝖾𝖺𝗋𝖼𝗁𝗂𝗇𝗀 𝖿𝗈𝗋 '{search}' 🔎</i></b>")
+            m=await message.reply_text(f"<b>ꜱᴇᴀʀᴄʜɪɴɢ {search}...</b>")
             search = search.lower()
             find = search.split(" ")
             search = ""
@@ -2144,7 +2110,7 @@ async def auto_filter(client, msg, spoll=False):
     else:
         message = msg.message.reply_to_message  # msg will be callback query
         search, files, offset, total_results = spoll
-        m=await message.reply_text(f"<b><i> 𝖲𝖾𝖺𝗋𝖼𝗁𝗂𝗇𝗀 𝖿𝗈𝗋 '{search}' 🔎</i></b>")
+        m=await message.reply_text(f"<b>ꜱᴇᴀʀᴄʜɪɴɢ {search}...</b>")
         settings = await get_settings(message.chat.id)
         await msg.message.delete()
     # if 'is_shortlink' in settings.keys():
@@ -2193,7 +2159,7 @@ async def auto_filter(client, msg, spoll=False):
     #     ])
     # else:
     #     btn.insert(0, [
-    #         InlineKeyboardButton('❗❗  ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ  ❗❗', url="https://t.me/MoviesDuniya4U")
+    #         InlineKeyboardButton('❗❗  ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ  ❗❗', url="https://t.me/dtxhb")
     #     ])
         btn.insert(0, [
             InlineKeyboardButton("sᴇɴᴅ ᴀʟʟ ғɪʟᴇs ᴏɴᴄᴇ", callback_data=f"sendfiles#{key}")
@@ -2226,7 +2192,7 @@ async def auto_filter(client, msg, spoll=False):
             )
     else:
         btn.append(
-            [InlineKeyboardButton(text="😶 ɴᴏ ᴍᴏʀᴇ ᴘᴀɢᴇꜱ ᴀᴠᴀɪʟᴀʙʟᴇ 😶",callback_data="pages")]
+            [InlineKeyboardButton(text="ɴᴏ ᴍᴏʀᴇ ᴘᴀɢᴇꜱ ᴀᴠᴀɪʟᴀʙʟᴇ",callback_data="pages")]
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     cur_time = datetime.now(pytz.timezone('Asia/Kolkata')).time()
