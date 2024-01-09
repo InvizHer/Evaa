@@ -47,7 +47,7 @@ async def start(client, message):
         total = await Media.count_documents()
         users = await db.total_users_count()
         chats = await db.total_chat_count()
-        m=await message.reply_sticker("CAACAgIAAxkBAAEBX4RlH6KWlmN63-NAKmqJrDfX_qB1DgACVAADQbVWDGq3-McIjQH6HgQ") 
+        m=await message.reply_sticker("CAACAgQAAxkBAAELHeFlm_aKU2vP4n-ONeuVxo5J2iSJbwACxgoAAhFLeVGVXO8JM8gkTDQE") 
         await asyncio.sleep(1)
         await m.delete()
         await message.reply_text(
