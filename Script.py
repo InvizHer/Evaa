@@ -207,16 +207,14 @@ Hᴇʟᴘ : <b>Sᴇᴛᴛɪɴɢꜱ</b>
 •❅──────✧❅✦❅✧──────❅•</b>"""
 
 
-    LOG_TEXT_G = """<b>#NewGroup
+    LOG_TEXT_G = """<b>#Emixina_NewGroup
 Gʀᴏᴜᴘ = {}(<code>{}</code>)
 Tᴏᴛᴀʟ Mᴇᴍʙᴇʀs = <code>{}</code>
-Aᴅᴅᴇᴅ Bʏ - {}
-Bot is Emixina Baby 💃</b>"""
+Aᴅᴅᴇᴅ Bʏ - {}</b>"""
 
-    LOG_TEXT_P = """<b>#NewUser
+    LOG_TEXT_P = """<b>#Emixina_NewUser
 ID - <code>{}</code>
-Nᴀᴍᴇ - {}
-Bot is Emixina Baby 💃🏻</b>"""
+Nᴀᴍᴇ - {}</b>"""
 
     ALRT_TXT = """<b>ʜᴇʟʟᴏ {},
 ᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,
