@@ -38,11 +38,8 @@ async def save_group(bot, message):
             await bot.leave_chat(message.chat.id)
             return
         buttons = [[
-                    InlineKeyboardButton('🔸 ᴍᴇꜱꜱᴀɢᴇ ʜᴇʀᴇ 🔹', url="https://t.me/TG_Bots_Supporter")
-                 ],[
-                    InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url=CHNL_LNK),
-                    InlineKeyboardButton('ɢʀᴏᴜᴘ', url=GRP_LNK)
-                  ]]
+                    InlineKeyboardButton('🔸 ᴍᴇꜱꜱᴀɢᴇ ʜᴇʀᴇ 🔹', url="https://t.me/InvizHer")
+        ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
             text=f"<b>ᴛʜᴀɴᴋ ʏᴏᴜ ꜰᴏʀ ᴀᴅᴅɪɴɢ ᴍᴇ ɪɴ {message.chat.title} ❣️\n\nᴅᴏɴ'ᴛ ꜰᴏʀɢᴇᴛ ᴛᴏ ᴍᴀᴋᴇ ᴍᴇ ᴀᴅᴍɪɴ. ɪꜰ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇꜱᴛɪᴏɴꜱ & ᴅᴏᴜʙᴛꜱ ᴀʙᴏᴜᴛ ᴜꜱɪɴɢ ᴍᴇ ᴄᴏɴᴛᴀᴄᴛ ꜰʀᴏᴍ ᴀᴅᴍɪɴ & ᴍᴇꜱꜱᴀɢᴇ ʜᴇʀᴇ 👇</b>",
@@ -61,11 +58,8 @@ async def save_group(bot, message):
                                                  caption=(script.MELCOW_ENG.format(u.mention, message.chat.title)),
                                                  reply_markup=InlineKeyboardMarkup(
                                                                          [[
-                    InlineKeyboardButton('🔸 ᴍᴇꜱꜱᴀɢᴇ ʜᴇʀᴇ 🔹', url="https://t.me/TG_Bots_Supporter")
-                 ],[
-                    InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url=CHNL_LNK),
-                    InlineKeyboardButton('ɢʀᴏᴜᴘ', url=GRP_LNK)
-                  ]]
+                    InlineKeyboardButton('🔸 ᴍᴇꜱꜱᴀɢᴇ ʜᴇʀᴇ 🔹', url="https://t.me/InvizHer")
+                    ]]
                                                  ),
                                                  parse_mode=enums.ParseMode.HTML
                 )
@@ -89,8 +83,8 @@ async def leave_a_chat(bot, message):
         chat = chat
     try:
         buttons = [[
-            InlineKeyboardButton('Support Group', url="https://t.me/TG_SUPPORT_GROUP"),
-            InlineKeyboardButton('Owner', url="https://t.me/KUSHALHK")
+            InlineKeyboardButton('Updates', url="https://t.me/DotexHub"),
+            InlineKeyboardButton('Owner', url="https://t.me/InvizHer")
         ],[
             InlineKeyboardButton('Use Me Here', url=f'https://t.me/{SUPPORT_CHAT}')
         ]]
