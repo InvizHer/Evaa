@@ -333,7 +333,7 @@ Mᴏᴠɪᴇs Nᴏᴛ Aᴠᴀɪʟᴀʙʟᴇ Rᴇᴀsᴏɴ:
 <b>ɴᴇᴇᴅ ᴍᴏʀᴇ ʜᴇʟᴘ?? ᴄᴏɴᴛᴀᴄᴛ ᴀᴅᴍɪɴ.</b>"""
 
     PLAN1_TXT = """
-<b>if you liked me ❤️. consider make a donation to support my developer..</b> 
+<i><b>if you liked me ❤️. consider make a donation to support my developer..</b></i>
     
 ɪꜰ ʏᴏᴜ ʜᴀᴘᴘʏ ᴡɪᴛʜ ᴛʜɪꜱ ʙᴏᴛ ᴀɴᴅ ᴏᴜʀ ꜱᴇʀᴠɪᴄᴇ ᴏꜰ ᴘʀᴏᴠɪᴅɪɴɢ ᴍᴏᴠɪᴇꜱ ꜱᴇʀɪᴇꜱ ꜰʀᴇᴇ ᴏꜰ ᴄᴏꜱᴛ, ᴛʜᴇɴ ʏᴏᴜ ᴄᴀɴ ꜱᴜᴘᴘᴏʀᴛ ᴛʜʀᴏᴜɢʜ ᴍᴀᴋɪɴɢ ꜱᴏᴍᴇ ᴅᴏɴᴀᴛɪᴏɴ ᴀꜱ ᴍᴜᴄʜ ʏᴏᴜ ᴄᴀɴ.. 
 ꜰᴏʀ ᴇxᴀᴍᴘʟᴇ ₹10, ₹20, ₹100...ᴇᴛᴄ  
