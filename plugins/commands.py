@@ -139,8 +139,8 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                           [
-                              InlineKeyboardButton('• ɢʀᴏᴜᴘ', url="https://t.me/+pMUzXcDWKD8wYmVl"),
-                              InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ •', url="https://t.me/dotexhub") 
+                              InlineKeyboardButton('ɢʀᴏᴜᴘ', url="https://t.me/+pMUzXcDWKD8wYmVl"),
+                              InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url="https://t.me/dotexhub") 
                              ],[
                               InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                           ]
@@ -158,8 +158,8 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                              InlineKeyboardButton('• ɢʀᴏᴜᴘ', url="https://t.me/+pMUzXcDWKD8wYmVl"),
-                              InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ •', url="https://t.me/dotexhub") 
+                              InlineKeyboardButton('ɢʀᴏᴜᴘ', url="https://t.me/+pMUzXcDWKD8wYmVl"),
+                              InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url="https://t.me/dotexhub") 
                              ],[
                               InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                          ]
@@ -322,8 +322,8 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                      [
-                              InlineKeyboardButton('• ɢʀᴏᴜᴘ', url="https://t.me/+pMUzXcDWKD8wYmVl"),
-                              InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ •', url="https://t.me/dotexhub") 
+                              InlineKeyboardButton('ɢʀᴏᴜᴘ', url="https://t.me/+pMUzXcDWKD8wYmVl"),
+                              InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url="https://t.me/dotexhub") 
                              ],[
                               InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                      ]
@@ -384,8 +384,8 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                      [
-                              InlineKeyboardButton('• ɢʀᴏᴜᴘ', url="https://t.me/+pMUzXcDWKD8wYmVl"),
-                              InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ •', url="https://t.me/dotexhub") 
+                              InlineKeyboardButton('ɢʀᴏᴜᴘ', url="https://t.me/+pMUzXcDWKD8wYmVl"),
+                              InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url="https://t.me/dotexhub") 
                              ],[
                               InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                      ]
@@ -444,8 +444,8 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
              [
-                              InlineKeyboardButton('• ɢʀᴏᴜᴘ', url="https://t.me/+pMUzXcDWKD8wYmVl"),
-                              InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ •', url="https://t.me/dotexhub") 
+                              InlineKeyboardButton('ɢʀᴏᴜᴘ', url="https://t.me/+pMUzXcDWKD8wYmVl"),
+                              InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url="https://t.me/dotexhub") 
                              ],[
                               InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
              ]
