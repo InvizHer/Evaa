@@ -280,7 +280,7 @@ Mᴏᴠɪᴇs Nᴏᴛ Aᴠᴀɪʟᴀʙʟᴇ Rᴇᴀsᴏɴ:
 • Name - <code>{file_name}</code>
 • Size - <code>{file_size}</code>
 
-➠ Powered/Shared by @EmixinaBot"""
+➠ Shared from @DotexHub"""
     
     IMDB_TEMPLATE_TXT = """
 𝙀𝙢𝙞𝙭𝙞𝙣𝙖 𝙞𝙨 𝙧𝙤𝙘𝙠𝙞𝙣𝙜 𝙝𝙚𝙧𝙚..❤️"""
